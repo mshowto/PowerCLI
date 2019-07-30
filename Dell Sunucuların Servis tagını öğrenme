@@ -1,0 +1,10 @@
+#Dell   sunucunuzun Service tagını öğrenmek için putty ile esxi hostunuza bağlanıp aşağıdaki komut ile 
+#aradığınız bilgilere ulaşabilirsiniz.
+
+[root@testesx6:~] /sbin/esxcli hardware platform get
+Platform Information
+   UUID: 0x4c 0x4c 0x45 0x44 0x0 0x34 0x53 0x10 0x80 
+   Product Name: PowerEdge R930
+   Vendor Name: Dell Inc.
+   Serial Number: 111111
+   IPMI Supported: true
