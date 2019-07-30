@@ -1,0 +1,2 @@
+# Yönettiğiniz vmware sanallaştırma ortamlarında bazen esxi hostlarınız purple screene düşebilir. Bu durumda ilgili host üzerinde çalışan makinelerin hangilerinin restart olduğunu aşağıdaki komutla öğrenebilirsiniz
+Get-VIEvent -MaxSamples 100000 -Start (Get-Date).AddDays(-1) -Type Warning | Where {$_.FullFormattedMessage -match "restarted"} |select CreatedTime,FullFormattedMessage | sort CreatedTime –Descending
